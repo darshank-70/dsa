@@ -7,7 +7,7 @@ import java.util.Queue;
 public class LevelOrder {
     //we need a queue 
     private static Queue<Node> queue = new LinkedList<Node>();
-    static void traversal(Node root){
+    public static void traversal(Node root){
         // first push root and null into Queue. 
         queue.add(root);
         queue.add(null);

@@ -28,9 +28,9 @@ static void levelOrderTraversal() {
     LevelOrder.traversal(root);
 }
     public static void main(String[] args) {
-        // given a array of nodes build a binary tree.
-        int[] nodes = new int[] { 1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1 };
-
+        // given an array of nodes build a binary tree.
+//        int[] nodes = new int[] { 1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1 };
+        int[] nodes = {1,2,-1,-1, 3, -1, -1};
         root = tree.buildTree(nodes);
         
 

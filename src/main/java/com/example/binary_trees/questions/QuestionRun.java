@@ -1,5 +1,6 @@
 package com.example.binary_trees.questions;
 
+import com.example.binary_trees.LevelOrder;
 import com.example.binary_trees.Node;
 import com.utils.BinaryTreeFactory;
 
@@ -8,6 +9,9 @@ public class QuestionRun {
     public static void main(String[] args) {
         //* * build working tree. * * 
         Node root  = BinaryTreeFactory.createSampleTree();
+        //will print Level order tracersal
+        LevelOrder.traversal(root);
+
         ////*********COUNT NO OF NODES********
         var count  = CountNodes.count(root);
         System.out.println("TOTAL NO OF NODES: "+ count);
@@ -36,6 +40,14 @@ public class QuestionRun {
         System.out.println("The Key " + 3 + "is present ? " + exists);
         
         // completeness 
-        
+
+
+        //COunt No of Leaves
+        var leafCount = CountLeavesNode.count(root);
+        System.out.println("Total LEAVE OF THE TREE: " + leafCount);//COunt No of Leaves
+
+        //count Non Leaf
+        var nonLeafCount = CountNonLeafNode.count(root);
+        System.out.println("Total NON LEAVE OF THE TREE: " + nonLeafCount);
     }
 }
