@@ -8,7 +8,7 @@ public class LinkedListsMain {
         list.addAtTail(1);
 //        list.addAtTail(2);
 //        list.addAtTail(3);
-//        list.addAtHead(-1);
+//        list.addAtHead(-1);   
 //        list.addAtHead(-2);
         //creates a list like -2 -> -1 -> 1 -> 2 -> 3 ->
 //       index becomes         0     1    2    3    4
